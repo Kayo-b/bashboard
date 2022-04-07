@@ -1,8 +1,41 @@
 #container{
     display:grid;
-    grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr
+    grid-template: repeat(4, 1fr) / repeat(6,1fr)
+    /* grid-template-columns: 5% 50% 25% 10%;
+    grid-template-rows: 25% 25% 25% 25%; */
 }
 
+
+.sidemenu{
+    border: 1px solid red;
+    display:grid;
+    grid-area: 1 / 1 / 7 / 4;
+    justify-content:space-evenly;
+}
+
+.main{
+    display: grid;
+    grid-area: 2 /2 / 7 / 7;
+    border:1px solid green
+}
+
+.projects{
+    display: grid;
+    grid-area: 1/1/5/5;
+    border:1px solid red;
+}
+
+.announce{
+    display: grid;
+    grid-area: 1/5/5/5;
+    border:1px solid red;
+}
+
+.trending{
+    display: grid;
+    grid-area: 3/5/5/5;
+    border:1px solid red;
+}
 
 .head{
    display:grid;
@@ -16,13 +49,17 @@
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    margin:50px
-    
+    padding-left:50px;
+    padding-right:50px; 
+    height:100px
 
 }
 
+#busca{
+    width: 100%;
+}
 #search{
-    width: 500px;
+    width: 80%;
 }
 
 
@@ -31,7 +68,8 @@
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    margin:50px;
+    padding-left:50px;
+    padding-right:50px;
 }
 
 
@@ -48,11 +86,10 @@
     height: 100%;
     
 }
-
+ 
 .butCont{
     width: 20%;
     height: 50px;
-    border: 1px solid red;
     display:flex;
     align-items: center;
     justify-content: space-around;
