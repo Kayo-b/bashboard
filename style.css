@@ -2,6 +2,11 @@
     margin:0;
 }
 
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size:100%;
+}
+
 #container{
     display:grid;
     grid-template: repeat(2, 0.4fr) repeat(2, 1fr) / repeat(1, 0.5fr) repeat(5, 1fr);
@@ -20,13 +25,33 @@
 
 
 .sidemenu{
-    border:1px solid #1f4f1f;
+    
     display:grid;
     grid-area: 1 / 1 / 7 / 4;
     justify-content:space-evenly;
     padding: 10px;
-    background-color: rgb(175, 192, 198);
+    background-color: rgb(41, 69, 83);
+
     
+    
+}
+.dash{
+    display:flex;
+    /* grid-template: repeat(1, 1fr) / repeat(2, 1fr);
+    grid-area: 1 / 1 / 1 / 1;
+     */
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    height:70px;
+
+
+}
+
+#Capa_1{
+    padding: 10px;
+    padding-bottom:100px;
+    height:50px
     
 }
 
@@ -37,7 +62,7 @@
 .main{
     display: grid;
     grid-area: 2 /2 / 7 / 7;
-    background-color: rgb(56, 87, 98);
+    background-color: rgb(79, 119, 134);
     /* border:1px solid green; */
 }
 
@@ -46,7 +71,7 @@
    grid-area: 1 / 2 / 1 / 7;
    background-color: rgb(175, 192, 198);
    /* grid-template: repeat(2, 1fr) / repeat(1, 100%); */
-   border:1px solid #1f4f1f;
+   background-color: rgb(51, 86, 104);
 }
 
 .upper{
@@ -57,7 +82,7 @@
     /* justify-content: space-around; */
     /* flex-direction: row; */
     align-items: center;
-    background-color: rgb(175, 192, 198);
+    background-color: rgb(51, 86, 104);
     padding-left:50px;
     padding-right:50px; 
 
@@ -81,8 +106,14 @@
 
 #Layer_1{
     display:grid;
-    width:13%;
-    padding-left:97px;
+    width:auto;
+    height: 40px;
+    background-color: rgb(51, 86, 104);
+    
+}
+
+#Layer_1:hover{
+
 }
 #submit{
     display:grid;
@@ -100,6 +131,11 @@
     display:grid;
     grid-area: 1 / 2 / 1 / 2;
     justify-content: right;
+    align-items: center;
+    background-color: rgb(51, 86, 104);
+    border-radius: 100px;
+    border: 0px
+    
 }
 
 
@@ -155,9 +191,14 @@
 }
 
 button{
-    border-radius: 10px;
-    border-color: #1f4f1f;
+    border-radius: 3px;
+    border-color: #5e855e;
     background-color: rgb(126, 149, 151);
+    justify-content: space-between;
+    height: 40px;    
+    font-size:100%;
+    font-family: 'Courier New', Courier, monospace;
+
 }
 
 .projects{
